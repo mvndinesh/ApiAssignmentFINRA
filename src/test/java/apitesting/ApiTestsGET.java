@@ -1,24 +1,9 @@
 package apitesting;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 import io.restassured.response.Response;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-
 import java.util.HashMap;
-
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import reusablefunctions.ReusableFunctions;
 import accessvariables.Accessvariables;
 
@@ -33,13 +18,11 @@ public class ApiTestsGET {
 	public void getCreateNewDeckOfCards01() {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","false");
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(52);
 		objReusableFunctions.setStrUrl(Accessvariables.getNewDeckOfCardsURL);
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(true, booReturnValue);	
 	}
@@ -49,13 +32,11 @@ public class ApiTestsGET {
 	public void getCreateNewDeckOfCards02() {	
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","true");
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(54);
 		objReusableFunctions.setStrUrl(Accessvariables.getNewDeckOfCardsURL);
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(true, booReturnValue);	
 
@@ -67,13 +48,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","false");
 		hmapparams.put("count",10);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(42);
 		objReusableFunctions.setStrUrl(Accessvariables.getDrawOneorMoreURL);
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(true, booReturnValue);	
 
@@ -85,13 +64,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","false");
 		hmapparams.put("count",22);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(30);
 		objReusableFunctions.setStrUrl(Accessvariables.getDrawOneorMoreURL);
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(true, booReturnValue);				
 
@@ -103,13 +80,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","true");
 		hmapparams.put("count",10);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(44);
 		objReusableFunctions.setStrUrl(Accessvariables.getDrawOneorMoreURL);
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(true, booReturnValue);	
 	}
@@ -120,13 +95,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","true");
 		hmapparams.put("count",22);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(32);
 		objReusableFunctions.setStrUrl(Accessvariables.getDrawOneorMoreURL);
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(true, booReturnValue);	
 	}
@@ -137,13 +110,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","false");
 		hmapparams.put("count",-5);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(5);
 		objReusableFunctions.setStrUrl(Accessvariables.getDrawOneorMoreURL);
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(true, booReturnValue);	
 
@@ -156,13 +127,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enabled","true");
 		hmapparams.put("count",12);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(42);
 		objReusableFunctions.setStrUrl("https://deckofcardsapi.com/api/deck/new/dr/");
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(false, booReturnValue);	
 	}
@@ -173,13 +142,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Ty" , "application/json");
 		hmapparams.put("jokers_enabled","true");
 		hmapparams.put("count",22);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(32);
 		objReusableFunctions.setStrUrl("https://deckofcardsapi.com/api/deck/new/dr/");
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(false, booReturnValue);	
 	}
@@ -190,13 +157,11 @@ public class ApiTestsGET {
 		hmapheaders.put("Content-Type" , "application/json");
 		hmapparams.put("jokers_enab","true");
 		hmapparams.put("count",22);
-
 		objReusableFunctions.setHmapHeaders(hmapheaders);
 		objReusableFunctions.setHmapParams(hmapparams);
 		objReusableFunctions.setIntExpectedRemaingCards(32);
 		objReusableFunctions.setStrUrl("https://deckofcardsapi.com/api/deck/new/dr/");
 		objReusableFunctions.setIntExpectedStatusCode(200);
-
 		boolean booReturnValue = objReusableFunctions.getDeckOfCards();
 		AssertJUnit.assertEquals(false, booReturnValue);	
 
