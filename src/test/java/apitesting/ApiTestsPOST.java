@@ -1,28 +1,7 @@
 package apitesting;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import com.google.gson.Gson;
-
-import accessvariables.Accessvariables;
-import io.restassured.RestAssured;
-import io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.equalTo;
-import io.restassured.matcher.RestAssuredMatchers.*;
-import org.hamcrest.Matchers.*;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import io.restassured.http.ContentType;
-import io.restassured.http.Cookies;
-import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
-import io.restassured.specification.RequestSpecification;
 import reusablefunctions.ReusableFunctions;
 
 public class ApiTestsPOST {
