@@ -29,7 +29,7 @@ Submit your solution to us via a repo on https://github.com/</p>
 <h3>Steps to Download and Execute this repository:</h3>
 
 1) Download this Git repository on to your desktop either through command line or downloading it from the following link :
-   https://github.com/mvndinesh/carddeckapi.git
+   https://github.com/mvndinesh/ApiAssignmentFINRA.git
 2) All the recent ecllipse has the maven pre-installed, if not please install the maven and Import this repository to 
     ecllipse as a maven project.
 3) Locate the testng.xml file in the folder structure.
